@@ -1,0 +1,34 @@
+.field {
+  width: 100%;
+  resize: none;
+  padding: 1.25rem;
+
+  background: #ebebeb;
+  border: 1px solid #ffffff;
+
+  box-shadow: inset -6px -6px 16px var(--white-shadow-color), inset 7px 7px 16px var(--dark-shadow-color);
+  border-radius: 20px;
+
+  transition: border-color .2s ease;
+
+	&:hover, &:focus {
+    border-color: var(--field-hover);
+	}
+
+  // ==== Modifiers ==== 
+	&_error {
+		border-color: var(--error-color);
+	}
+}
+
+.info {
+  color: var(--text-color);
+
+  &_focused {
+    color: var(--secondary-text-color);
+  }
+}
+
+.error {
+  color: var(--error-color);
+}
